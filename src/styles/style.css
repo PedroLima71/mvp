@@ -1,0 +1,410 @@
+/* Reseta os estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #161616 !important;
+    color: #333;
+}
+
+header {
+    background-color: #030303d0;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f6fa00a6;
+}
+
+header .logo h1 {
+    font-size: 1.5rem;
+    font-family: "Kelly Slab", sans-serif;
+    
+}
+
+header .logo span{
+    font-family: fantasy;
+    background: linear-gradient(90deg, #f2c14e, #d4af37, #f1c40f);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.7rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu li #op {
+    padding: 0px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Chalet";
+}
+
+.menu li #op:hover {
+    border-bottom: 2px solid #fff;
+}
+.menu img{
+    width: 18px;
+}
+.menu .entrar {
+    font-family: "Chalet";
+    padding: 0.6rem 3rem;
+    background: #2b2c2e;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid yellow; 
+    transition: background-color 0.3s ease, border-color 0.3s ease; 
+}
+
+.menu .entrar:hover {
+    color: #333;
+    background-color: #d4af37; 
+    border-color: #b8860b; 
+}
+
+#hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    align-items: center;
+    border-bottom: 2px solid #facc00;
+    padding: 6rem 1rem;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(4, 4, 45, 1) 35%, rgba(0, 41, 50, 1) 100%);
+}
+
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero span {
+    background: linear-gradient(90deg, #f2c14e, #d4af37, #f1c40f);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 0.5px solid #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.cta-button:hover {
+    color: #030303;
+    background: rgb(255, 219, 61);
+    box-shadow: 0 0 30px 5px rgba(236, 212, 0, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.cta-button ::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+
+.cta-button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 70px 40px #ffffff06;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+.cta-button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+}
+
+
+#sobre,
+#servicos,
+#ranking,
+#Colaboradores {
+    padding: 2rem 1rem;
+    text-align: center;
+    max-width: 800px;
+    /* Limita a largura máxima */
+    margin: 50px auto;
+    /* Centraliza o container com espaçamento superior e inferior */
+    padding: 20px 30px;
+    /* Espaçamento interno */
+    background-color: #f9f9f9;
+    /* Fundo suave para destacar o texto */
+    border-radius: 8px;
+    /* Cantos arredondados */
+    box-shadow: 0 8px 12px rgba(255, 255, 255, 0.622);
+    border: 2.6px solid rgb(252, 214, 0); 
+}
+
+#sobre h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#sobre p {
+    text-align: start;
+    /* Centraliza o texto */
+    font-size: 18px;
+    /* Tamanho da fonte */
+    margin: 20px 0;
+    /* Margem superior e inferior */
+    line-height: 1.6;
+    /* Espaçamento entre linhas */
+    color: #333;
+    /* Cor do texto */
+    font-family: 'Arial', sans-serif;
+    /* Fonte legível */
+}
+#sobre span{
+    color: rgb(255, 238, 0);
+}
+
+#servicos ul {
+    text-align: start;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+#servicos ul li {
+    margin: 0.5rem 0;
+    background-color: #282828;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+#servicos span{
+    color: rgb(255, 208, 0);
+}
+
+#servicos .btn_funciona{
+    align-items: center;
+    border: 1px solid rgb(252, 214, 0); 
+    background-color: #252525;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.8rem;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 13px;
+    margin-bottom: 5px;
+}
+#servicos .btn_funciona:hover {
+    color: #000000;
+    background-color: #fbff00;
+    box-shadow: 0 0 30px 5px rgba(236, 212, 0, 0.815);
+    border: 1px solid rgb(0, 0, 0); 
+  }
+
+/* footer */
+footer {
+    color: #ddd;
+    background-color: #282828;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #ffc400;
+}
+
+footer p{
+    font-size: 14px;
+    
+}
+
+footer h3 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #fffb00;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ffee00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b3b000;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+
+
+/* Colaboradoes */
+#Colaboradores p{
+    text-align: start;
+    font-size: 18px;
+    margin: 20px 0;
+    line-height: 1.6;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+#Colaboradores img{
+    margin-bottom: 15px;
+
+}
+#Colaboradores .btn-primary{
+    align-items: center;
+    align-items: center;
+    border: 1px solid rgb(252, 214, 0); 
+    background-color: #252525;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.8rem;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 13px;
+    margin-bottom: 5px;
+}
+
+#Colaboradores .btn-primary:hover {
+    color: #000000;
+    background-color: #fbff00;
+    box-shadow: 0 0 30px 5px rgba(236, 212, 0, 0.815);
+    border: 1px solid rgb(0, 0, 0); 
+  
+}
+
+
+/* Redes */
+#redes-itens {
+    text-align: center;
+    margin-top: 20px;
+    padding: 1.2rem;
+    font-size: 18px;
+}
+#redes-itens p{
+  font-size: 18px;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icon img {
+    height: 30px; /* Tamanho aumentado das imagens */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave */
+    
+}
+
+.social-icon img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+    filter: brightness(1.2); /* Efeito de brilho ao passar o mouse */
+}
+
+.social-icon img#insta:hover {
+    filter: brightness(1.5); 
+}
+
+.social-icon img#disc:hover {
+    filter: brightness(1.3); 
+}
+.social-icon img#whats:hover {
+    filter: brightness(1.4); 
+}
